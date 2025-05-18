@@ -22,3 +22,20 @@ Find all properties where the **average rating is greater than 4.0**.
 
 ### 🧾 Description:
 This query uses a non-correlated subquery that computes the average rating for each property and selects only those with an average above 4.0.
+
+## 🔹 1. Aggregation Queries
+
+### 🎯 Objective:
+Use standard SQL aggregation functions (`COUNT`, `SUM`, `AVG`, `MIN`, `MAX`) to extract insights from data.
+
+### 💻 Examples:
+
+#### 🏘️ Count total number of properties per host:
+```sql
+SELECT 
+    host_id,
+    COUNT(*) AS total_properties
+FROM 
+    Property
+GROUP BY 
+    host_id;
