@@ -8,3 +8,17 @@ Retrieves all properties and their associated reviews, including properties with
 
 ### 3. FULL OUTER JOIN: Users and Bookings
 Retrieves all users and all bookings, including users with no bookings and bookings without a linked user (using UNION to simulate FULL OUTER JOIN).
+
+## 🧠 SQL Subqueries – Advanced Queries
+
+This file contains SQL queries demonstrating both **non-correlated** and **correlated subqueries** using the schema from the **ALX Airbnb Database** project.
+
+---
+
+## 🔹 1. Non-Correlated Subquery
+
+### 🎯 Objective:
+Find all properties where the **average rating is greater than 4.0**.
+
+### 🧾 Description:
+This query uses a non-correlated subquery that computes the average rating for each property and selects only those with an average above 4.0.
